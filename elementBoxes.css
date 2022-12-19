@@ -1,0 +1,140 @@
+/* Individual element boxes */
+.element-box{
+    width:inherit;
+    height:3rem;
+    border: outset 2px white; 
+   
+    min-width:0; 
+    overflow: hidden; 
+}
+
+
+.atomicNumber{
+    margin-top: 0.15rem;
+    font-weight: 600;
+    
+}
+.elementSymbol{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+   
+}
+.elementName{
+    font-size: 0.7vw;
+    font-weight: bold;
+}
+/* atomic weight hidden, as I wanted to have this for further/later development on this project */
+.atomicWeight{
+    font-size: 0.7rem;
+    font-weight: 600;
+    display: none;
+    
+}
+/* a second grid container for the content inside each box - this time in rows */
+.box-content-container{
+    display: grid;
+    grid-template-rows: 0.8rem 1.2rem 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* containers for the lanthanides and actinides boxes on the main table */
+.box-content-container2{
+    text-align: center;
+    font-size: 0.9vw;
+    margin: 20% auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* the empty space between hydrogen and helium */
+.empty-space1 {
+    grid-column-start: 2;
+    grid-column-end: 18;
+}
+/* the empty space between beryllium and Boron */
+.empty-space2 {
+    grid-column-start: 3;
+    grid-column-end: 13;
+}
+
+/* the empty space between Magnesium and Aluminium */
+.empty-space3 { 
+    grid-column-start: 3;
+    grid-column-end: 13;
+}
+
+/*these are the lathanides and actinides boxes below the main table*/
+.empty-space4 {
+    font-family:'Gill Sans', sans-serif;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+    
+}   
+    
+/* the 2 classes below are for custom coloring for the luthanides and actinides boxes on the main table*/
+.single-empty-box-1 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background: linear-gradient(135deg,#68d5bf,#6ed5c1,rgb(32, 32, 32))
+}
+.single-empty-box-2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background: linear-gradient(135deg,#69d693,rgb(112, 220, 164),rgb(31, 31, 31));
+    
+}
+
+/* extra-margin class put on the furst row below the main column */
+.extra-margin{
+    margin: 2rem 0 0.5rem 0;
+}
+
+/* box colour for *class name*  */
+.alkali-metals{
+background: linear-gradient(135deg,#944141,#944141,rgb(11, 11, 11));
+}
+/* box colour for *class name*  */
+.alkali-earth-metals{
+background: linear-gradient(135deg,#C86B41,#b36643,black);
+}
+/* box colour for *class name*  */
+.noble-gasses{
+background: linear-gradient(135deg,#c8649f,#c46fa1,black) 
+}
+/* box colour for *class name*  */
+.transition-metals{
+    background: linear-gradient(135deg,#8b8fa0,#7c8297,black)  
+}
+/* box colour for *class name*  */
+.other-non-metals{
+    background: linear-gradient(135deg,#3d91c1,#4d92ba,black);
+}
+/* box colour for *class name*  */
+.metalloids{
+    background: linear-gradient(135deg, #cdae3d, #d8b845,black);
+}
+/* box colour for *class name*  */
+.post-transition-metals{    
+    background: linear-gradient(135deg,#8465b2,#8d6bc0,black);
+}
+/* box colour for *class name*  */
+.unknown-properties{    
+ background: linear-gradient(135deg,#d3cec3,#eae2d1,rgb(46, 46, 46));
+}
+/* box colour for *class name*  */
+.lanthanides{
+    background: linear-gradient(135deg,#68d5bf,#6ed5c1,rgb(32, 32, 32));
+}
+/* box colour for *class name*  */
+.actinides{
+    background: linear-gradient(135deg,#69d693,rgb(112, 220, 164),rgb(31, 31, 31));
+}
+
+/* some extra customisation on the lanthanides box as text was a little unamanagable*/
+.lanthanides-box {
+    font-size: 0.75vw;
+}
+

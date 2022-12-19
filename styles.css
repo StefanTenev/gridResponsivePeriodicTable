@@ -1,0 +1,33 @@
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(18, 4vw);
+    gap:1px;
+   
+    
+    padding: 10%;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* image will not be dislpayed until the breaking point*/
+img{
+    display: none;
+}
+
+
+/* breaking point - grid will disappear and image will come in its place*/
+@media(max-width: 700px){
+    .grid-container{
+        display:none;
+    }
+    
+    img{
+        display:block;
+        width: 110%;
+        margin-top:30%;
+    }
+}
+
